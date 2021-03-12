@@ -1,13 +1,97 @@
 syntax="proto3";
 
 service SchoolCalendarService {
-  rpc Greet(GreetRequest) returns (GreetResponse);
+  rpc AddEvent(AddEventRequest) returns (Event);
+  rpc DeleteEvent(DeleteEventRequest) returns (EmptyResponse);
+  rpc GetEvents(GetEventsRequest) returns (GetEventsResponse);
+  rpc GetEventsByDate(GetEventsByDateRequest) returns (GetEventsByDateResponse);
+  rpc GetModuleTermByDate(GetModuleTermByDateRequset) returns (ModuleTerm);
+  rpc GetModuleTerms(GetModuleTermsRequest) returns (GetModuleTermsResponse);
+  rpc SetModuleTerm(ModuleTerm) returns (EmptyResponse);
 }
 
-message GreetRequest {
-  string name = 1;
+enum EventType {
+  Holiday = 0;
+  PublicHoliday = 1;
+  Exam = 2;
+  SubstituteDay = 3;
 }
 
-message GreetResponse {
-  string text = 1;
+enum Day {
+  Sun = 0;
+  Mon = 1;
+  Tue = 2;
+  Wed = 3;
+  Thu = 4;
+  Fri = 5;
+  Sat = 6;
 }
+
+message Event {
+  int32 id = 1;
+  string date = 2;
+  EventType type = 3;
+  string description = 4;
+  Day changeTo = 5;
+}
+
+message AddEventRequest {
+  string date = 1;
+  EventType type = 2;
+  string description = 3;
+  Day changeTo = 4;
+}
+
+message DeleteEventRequest {
+  int32 id = 1;
+}
+
+message EmptyResponse {}
+
+message GetEventsRequest {
+  int32 year = 1;
+}
+
+message GetEventsResponse {
+  repeated Event events = 1;
+}
+
+message GetEventsByDateRequest {
+  string date = 1;
+}
+
+message GetEventsByDateResponse {
+  repeated Event events = 1;
+}
+
+enum Module {
+  SpringA = 0;
+  SpringB = 1;
+  SpringC = 2;
+  SummerVacation = 3;
+  FallA = 4;
+  FallB = 5;
+  FallC = 6;
+  SpringVacation = 7;
+}
+
+message ModuleTerm {
+  int32 id = 1;
+  int32 year = 2;
+  Module module = 3;
+  string start = 4;
+  string end = 5;
+}
+
+message GetModuleTermByDateRequset {
+  string date = 1;
+}
+
+message GetModuleTermsRequest {
+  int32 year = 1;
+}
+
+message GetModuleTermsResponse {
+  repeated ModuleTerm terms = 1;
+}
+
