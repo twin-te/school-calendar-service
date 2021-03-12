@@ -79,16 +79,10 @@ export const schoolCalendarService: GrpcServer<SchoolCalendarService> = {
   async getModuleTerms({ request }, callback) {
     try {
       const res = await getModuleTermsUseCase(request.year)
-      if (!res)
-        callback({
-          code: Status.NOT_FOUND,
-          details: '指定された日時のモジュールデータは存在しません',
-        })
-      else
-        callback(
-          null,
-          GetModuleTermsResponse.create({ terms: res.map(toGrpcModuleTerm) })
-        )
+      callback(
+        null,
+        GetModuleTermsResponse.create({ terms: res.map(toGrpcModuleTerm) })
+      )
     } catch (e) {
       callback(toGrpcError(e))
     }

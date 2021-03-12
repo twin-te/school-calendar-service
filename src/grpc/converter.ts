@@ -56,7 +56,7 @@ export function toGrpcModuleTerm(m: Module): GrpcModuleTerm {
   return {
     id: m.id,
     year: m.year,
-    module: Object.keys(ModuleEnum).indexOf(ModuleEnum[m.module]),
+    module: (m.module as unknown) as GrpcModule,
     start: m.start.toISOString(),
     end: m.end.toISOString(),
   }
