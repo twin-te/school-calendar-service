@@ -9,13 +9,19 @@ beforeAll(async () => {
   await clearDB()
 })
 
-test('setModule', () => {
+test('addEvent', () => {
   return expect(
     addEventUseCase(dayjs('2021-04-07'), EventType.PublicHoliday, 'description')
-  ).resolves.toBeUndefined()
+  ).resolves.toEqual({
+    id: expect.any(Number),
+    date: dayjs('2021-04-07'),
+    type: EventType.PublicHoliday,
+    description: 'description',
+    changeTo: null,
+  })
 })
 
-test('setModule', () => {
+test('addEvent', () => {
   return expect(
     addEventUseCase(
       dayjs('2021-04-07'),
@@ -23,7 +29,13 @@ test('setModule', () => {
       'description',
       Day.Mon
     )
-  ).resolves.toBeUndefined()
+  ).resolves.toEqual({
+    id: expect.any(Number),
+    date: dayjs('2021-04-07'),
+    type: EventType.SubstituteDay,
+    description: 'description',
+    changeTo: Day.Mon,
+  })
 })
 
 afterAll(disconnectDatabase)
