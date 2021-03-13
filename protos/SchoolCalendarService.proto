@@ -15,6 +15,7 @@ enum EventType {
   PublicHoliday = 1;
   Exam = 2;
   SubstituteDay = 3;
+  Other = 4;
 }
 
 enum Day {

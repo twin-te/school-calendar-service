@@ -6,6 +6,7 @@ export enum EventType {
   PublicHoliday,
   Exam,
   SubstituteDay,
+  Other,
 }
 
 export enum Day {
