@@ -58,7 +58,7 @@
   {
     "date": "2021-07-23",
     "type": "PublicHoliday",
-    "description": "体育の日",
+    "description": "体育の日"
   },
   {
     "date": "2021-07-30",
@@ -243,7 +243,7 @@
     "date": "2022-02-10",
     "type": "PublicHoliday",
     "description": "建国記念の日"
-  }
+  },
   {
     "date": "2022-02-14",
     "type": "Exam",
