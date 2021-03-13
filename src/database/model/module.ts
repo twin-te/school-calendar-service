@@ -11,10 +11,10 @@ export enum ModuleEnum {
   SpringA,
   SpringB,
   SpringC,
-  SummerVacation,
   FallA,
   FallB,
   FallC,
+  SummerVacation,
   SpringVacation,
 }
 

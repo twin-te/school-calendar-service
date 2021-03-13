@@ -68,10 +68,10 @@ enum Module {
   SpringA = 0;
   SpringB = 1;
   SpringC = 2;
-  SummerVacation = 3;
-  FallA = 4;
-  FallB = 5;
-  FallC = 6;
+  FallA = 3;
+  FallB = 4;
+  FallC = 5;
+  SummerVacation = 6;
   SpringVacation = 7;
 }
 
