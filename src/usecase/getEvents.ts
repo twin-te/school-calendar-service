@@ -12,5 +12,5 @@ type Result = {
 export async function getEventsUseCase(year: number): Promise<Result[]> {
   return getConnection()
     .getRepository(Event)
-    .find({ date: Between(dayjs(`${year}-01-01`), dayjs(`${year}-12-31`)) })
+    .find({ date: Between(dayjs(`${year}-04-01`), dayjs(`${year + 1}-03-31`)) })
 }

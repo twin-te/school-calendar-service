@@ -22,6 +22,9 @@ COPY --from=build-env /usr/src/app/generated ./generated
 COPY --from=build-env /usr/src/app/package.json .
 COPY --from=build-env /usr/src/app/yarn.lock .
 
+# TODO 後で消す
+COPY --from=build-env /usr/src/app/school-calendar ./school-calendar
+
 RUN yarn install --prod
 
 EXPOSE 50051
