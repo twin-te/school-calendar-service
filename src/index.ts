@@ -37,10 +37,10 @@ async function importEventsIfNotExist(year: number) {
 
 // TODO 後で消す
 async function importModuleIfNotExist(year: number) {
-  logger.info(`importing module${year}.json...`)
   if ((await getModuleTermsUseCase(year)).length === 0) {
+    logger.info(`importing module${year}.json...`)
     const data = JSON.parse(
-      fs.readFileSync('./school-calendar/module2021.json', 'utf-8')
+      fs.readFileSync(`./school-calendar/module${year}.json`, 'utf-8')
     ) as {
       year: number
       module: keyof typeof ModuleEnum
