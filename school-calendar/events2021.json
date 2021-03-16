@@ -58,7 +58,7 @@
   {
     "date": "2021-07-23",
     "type": "PublicHoliday",
-    "description": "体育の日"
+    "description": "スポーツの日"
   },
   {
     "date": "2021-07-30",
@@ -88,7 +88,7 @@
   {
     "date": "2021-08-06",
     "type": "Exam",
-    "description": "春ABC 期末試験"
+    "description": "春C 期末試験"
   },
   {
     "date": "2021-09-24",
@@ -126,6 +126,11 @@
     "description": "学園祭"
   },
   {
+    "date": "2021-11-08",
+    "type": "Holiday",
+    "description": "学園祭による臨時休校"
+  },
+  {
     "date": "2021-11-09",
     "type": "SubstituteDay",
     "description": "",
@@ -138,6 +143,11 @@
   },
   {
     "date": "2021-11-20",
+    "type": "Other",
+    "description": "秋季スポーツ・デー"
+  },
+  {
+    "date": "2021-11-21",
     "type": "Other",
     "description": "秋季スポーツ・デー"
   },
@@ -240,7 +250,7 @@
     "description": "秋ABC 期末試験"
   },
   {
-    "date": "2022-02-10",
+    "date": "2022-02-11",
     "type": "PublicHoliday",
     "description": "建国記念の日"
   },
@@ -257,12 +267,12 @@
   {
     "date": "2022-02-16",
     "type": "Exam",
-    "description": "秋ABC 期末試験"
+    "description": "秋C 期末試験"
   },
   {
     "date": "2022-02-17",
     "type": "Exam",
-    "description": "秋ABC 期末試験"
+    "description": "秋C 期末試験"
   },
   {
     "date": "2022-03-10",
