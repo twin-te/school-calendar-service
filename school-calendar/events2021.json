@@ -10,6 +10,31 @@
     "description": "1年次TOEIC IPテスト"
   },
   {
+    "date": "2021-04-07",
+    "type": "Holiday",
+    "description": "新入生オリエンテーション"
+  },
+  {
+    "date": "2021-04-29",
+    "type": "PublicHoliday",
+    "description": "昭和の日"
+  },
+  {
+    "date": "2021-05-03",
+    "type": "PublicHoliday",
+    "description": "憲法記念日"
+  },
+  {
+    "date": "2021-05-04",
+    "type": "PublicHoliday",
+    "description": "みどりの日"
+  },
+  {
+    "date": "2021-05-05",
+    "type": "PublicHoliday",
+    "description": "こどもの日"
+  },
+  {
     "date": "2021-05-15",
     "type": "Other",
     "description": "春季スポーツ・デー"
