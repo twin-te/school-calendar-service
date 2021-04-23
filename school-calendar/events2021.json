@@ -35,6 +35,12 @@
     "description": "こどもの日"
   },
   {
+    "date": "2021-05-07",
+    "type": "SubstituteDay",
+    "description": "",
+    "changeTo": "Wed"
+  },
+  {
     "date": "2021-05-15",
     "type": "Other",
     "description": "春季スポーツ・デー"
