@@ -68,8 +68,10 @@ async function main() {
   // TODO 後で消す
   await importModuleIfNotExist(2020)
   await importModuleIfNotExist(2021)
+  await importModuleIfNotExist(2022)
   await importEventsIfNotExist(2020)
   await importEventsIfNotExist(2021)
+  await importEventsIfNotExist(2022)
   logger.info('Ready')
 }
 
