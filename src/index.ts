@@ -69,9 +69,11 @@ async function main() {
   await importModuleIfNotExist(2020)
   await importModuleIfNotExist(2021)
   await importModuleIfNotExist(2022)
+  await importModuleIfNotExist(2023)
   await importEventsIfNotExist(2020)
   await importEventsIfNotExist(2021)
   await importEventsIfNotExist(2022)
+  await importEventsIfNotExist(2023)
   logger.info('Ready')
 }
 
