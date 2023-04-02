@@ -149,7 +149,7 @@
   {
     "date": "2023-10-02",
     "type": "Holiday",
-    "description": "開学記念日"
+    "description": "臨時休業"
   },
   {
     "date": "2023-10-09",
@@ -223,7 +223,7 @@
   },
   {
     "date": "2023-11-28",
-    "type": "Other",
+    "type": "Holiday",
     "description": "学群3年次TOEIC IPテスト"
   },
   {
@@ -342,6 +342,11 @@
     "date": "2024-03-08",
     "type": "Other",
     "description": "医学類卒業日"
+  },
+  {
+    "date": "2024-03-12",
+    "type": "Other",
+    "description": "個別学力検査等後期日程"
   },
   {
     "date": "2024-03-25",
