@@ -215,6 +215,11 @@
     "description": "秋季スポーツ・デー"
   },
   {
+    "date": "2023-11-23",
+    "type": "PublicHoliday",
+    "description": "勤労感謝の日"
+  },
+  {
     "date": "2024-11-25",
     "type": "SubstituteDay",
     "description": "",
